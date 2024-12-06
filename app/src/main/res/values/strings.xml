@@ -1,0 +1,15 @@
+<resources>
+    <string name="time_taskView">%02d:00-%02d:00</string>
+    <string name="time_task_in_interfaceTaskView">%02d-%02d</string>
+    <string name="time_tableTaskLayout">%02d:00</string>
+    <string name="app_name">Daily</string>
+    <string name="adding_task">Добавить задание</string>
+    <string name="import_tasks">Импортировать задания</string>
+    <string name="export_tasks">Экспортировать задания</string>
+    <string name="error_message">Что-то пошло не так…</string>
+    <string name="success_message">Успешно</string>
+    <string name="time_hint">Время:</string>
+    <string name="title_hint">Заголовок:</string>
+    <string name="details_hint">Подробности:</string>
+    <string name="unspecified_mode">Экран закрыт: не указан режим</string>
+</resources>
