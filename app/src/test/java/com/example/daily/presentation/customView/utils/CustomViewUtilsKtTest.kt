@@ -1,6 +1,7 @@
 package com.example.daily.presentation.customView.utils
 
-import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class CustomViewUtilsKtTest {
@@ -13,8 +14,8 @@ class CustomViewUtilsKtTest {
         val resultMore = isStartTimeLessThanZero(valueMoreThanZero)
         val resultLess = isStartTimeLessThanZero(valueLessThanZero)
 
-        assertEquals(false, resultMore)
-        assertEquals(true, resultLess)
+        assertFalse(resultMore)
+        assertTrue(resultLess)
     }
 
     @Test
@@ -28,21 +29,20 @@ class CustomViewUtilsKtTest {
         val resultSame = isStartTimeMoreOrSameEndTime(value, endTimeSameValue)
         val resultMore = isStartTimeMoreOrSameEndTime(valueLessEndTime, endTimeSameValue)
 
-        assertEquals(true, resultLess)
-        assertEquals(true, resultSame)
-        assertEquals(false, resultMore)
+        assertTrue(resultLess)
+        assertTrue(resultSame)
+        assertFalse(resultMore)
     }
 
     @Test
     fun `Is end time more than maxValue`() {
-        // maxValue = 23
         val valueMore = 25
         val valueLess = 21
 
         val resultMore = isEndTimeMoreThanMaxValue(valueMore)
         val resultLess = isEndTimeMoreThanMaxValue(valueLess)
 
-        assertEquals(true, resultMore)
-        assertEquals(false, resultLess)
+        assertTrue(resultMore)
+        assertFalse(resultLess)
     }
 }
